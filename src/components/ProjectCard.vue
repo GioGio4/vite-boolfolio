@@ -27,6 +27,9 @@ export default {
                 <h6 class="card-subtitle mb-2 text-body-secondary">{{ project.type?.name }}</h6>
                 <hr v-if="project.type">
                 <p class="card-text">{{ abstract }}</p>
+
+                <router-link :to="{ name: 'project-detail', params: { id: project.id } }"
+                    class="btn btn-sm btn-primary">Detail</router-link>
             </div>
         </div>
     </div>
