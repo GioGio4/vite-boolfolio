@@ -25,7 +25,7 @@ export default {
                 <h4 class="card-title">{{ project.title }}</h4>
                 <hr>
                 <h6 class="card-subtitle mb-2 text-body-secondary">{{ project.type?.name }}</h6>
-                <hr>
+                <hr v-if="project.type">
                 <p class="card-text">{{ abstract }}</p>
             </div>
         </div>
